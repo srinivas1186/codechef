@@ -1,0 +1,66 @@
+SamSung question on 2019 recruitment
+
+Samsung coding question
+
+Complete Packaging -> Program title
+
+Normally at any packaging facility problem of getting the most products out in a container with no wastage of space is done everyday and is a tedious task by hand to solve.So, you have to write a program which can take number_of_boxes available and get the length of the container that they should be fitted in and give max volume of boxes fitted in the container.
+
+Assume that each package is fragile and one package cannot be placed over the other.
+and each package has a length and breadth(You can either place package by length or by breadth in container).
+If packages cannot be fitted perfectly return 0
+
+Constraints:
+
+1<= Number of boxes <=100
+1<= length of the container <=100
+1<= length and breadth of each box <=100
+
+
+Input:
+
+1. Number of boxes
+2. Length of the container
+3. Each box's length and breadth.
+
+Output:
+max volume of products that can be fitted perfectly in given contianer length
+
+
+Test Input 1:
+Enter number_of_boxes: 5
+Enter length_of_container: 26
+
+26 3
+13 42
+23 26
+98 10
+3 40
+
+Test Output 1:
+1646
+
+Explanation:
+
+Some Possiblities of products to place in container are
+1) taking box1 and placing on the length side will occupy the entire container as length of container is 26 and volume filled by placing box1 like this is 78
+2) taking box3 and placing on its breadth will also occupy the entire container as legth of container is perfectly fitted by box3 breadth and volume filled is 598
+3) but taking box2('length side'),box4('breadth side'),box5('length side') will also fit the length of container without empty space and volume filled will be 1646 which is the maximum volume that can be filled in the container.
+
+So, the output is 1646
+
+Test Input 2:
+Enter number_of_boxes: 3
+Enter length_of_container: 51
+
+26 3
+13 42
+23 26
+
+Test Output 2:
+0
+
+Explanation:
+
+There is no possible combination of products available to be placed so that the container length is fitted perfectly.So,max volume is 0
+
