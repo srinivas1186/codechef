@@ -1,4 +1,4 @@
-# Programmin
+# Programming
 Programming Problems across multiple sites to test and run check time-analysis in command line
 
 Use command : "python3 createprogram.py" to create basic folder strcture 
