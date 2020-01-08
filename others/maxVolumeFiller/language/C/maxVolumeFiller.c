@@ -5,7 +5,7 @@ int main(int argc, char const *argv[])
 	int n,csize ;
 	int arr[101];
 	scanf("%d %d",&n,&csize);
-	printf("%d %d\n",n,csize );
+	// printf("%d %d\n",n,csize );
 	int length,breath;
 	for (int i = 0; i < 101; ++i)
 	{
@@ -16,14 +16,14 @@ int main(int argc, char const *argv[])
 	int msum;
 	for(int J=0;J<n;J++){
 		scanf("%d %d",&length,&breath);
-		printf("\n%d\n%d %d\n",J+1,length,breath );
+		// printf("\n%d\n%d %d\n",J+1,length,breath );
 		area = length*breath;
 		for(int i=1;i<=csize;i++){
 			larr[i]=arr[i];
 			barr[i]=arr[i];
-			printf("%d ",arr[i]);
+			// printf("%d ",arr[i]);
 		}
-		printf("\n");
+		// printf("\n");
 		for (int i = 1; i <= csize; ++i)
 		{	
 			if(i==length){
@@ -59,12 +59,12 @@ int main(int argc, char const *argv[])
 		for (int i = 1; i <= csize; ++i)
 		{
 			maxOfTwo = larr[i]>barr[i]? larr[i]:barr[i];
-			printf("%d ", maxOfTwo);
+			// printf("%d ", maxOfTwo);
 			if(arr[i]<maxOfTwo){
 				arr[i] = maxOfTwo;
 			}
 		}
-		printf("\n");
+		// printf("\n");
 	}
 	printf("%d\n",arr[csize]);
 	return 0;
