@@ -1,0 +1,38 @@
+{
+	"structure": [
+		"x",
+		"y",
+		"z",
+		"x-array"
+	],
+	"x": {
+		"type": "float",
+		"range": {
+			"gt": -10	,
+			"lt": 100
+		}
+	},
+	"y": {
+		"type": "string",
+		"maxSize": 10
+	},
+	"z": {
+		"type": "integer",
+		"range": {
+			"gt": 1,
+			"lt": 30
+		}
+	},
+	"x-array": {
+		"type": "array",
+		"seperator": "\n",
+		"length": "z",
+		"elementType": {
+			"type": "float",
+			"range": {
+				"gt": -10	,
+				"lt": 100
+			}
+		}
+	}
+}
